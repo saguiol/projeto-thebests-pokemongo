@@ -1,0 +1,110 @@
+body {
+    font-family: 'Lato', sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #d0fdca;
+    color: #333333;
+    transition: 0.5s ease-in-out;
+}
+
+body.dark-mode {
+    background-color: #212121;
+    color: #f5f5f5;
+    transition: all 0.3s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo {
+    width: 60px;
+    transition: 0.2s ease-in-out;
+}
+
+header .button-image {
+    width: 50px;
+    transition: 0.2s ease-in-out;
+}
+
+header #change-theme-button {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .button-image:hover,
+main .pokemon-card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .pokemon-card {
+    background-color: #fafafa;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .pokemon-card:hover {
+    background-color: #96d9d6;
+}
+
+.dark-mode .pokemon-card {
+    background-color: #a8a8a8;
+    transition: all 0.2s;
+}
+
+main .pokemon-card .power-level {
+    display: flex;
+    align-items: baseline;
+    text-transform: uppercase;
+}
+
+main .pokemon-card .power-level .number-of-power-level {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+main .pokemon-card .gif {
+    width: 70px;
+    height: 65px;
+    display: flex;
+}
+
+main .name-of-pokemon {
+    text-transform: uppercase;
+}
+
+main .images-of-icons-types {
+    display: flex;
+    gap: 30px;
+}
+
+main .icons-type {
+    display: flex;
+    width: 20px;
+}
+
+main .types {
+    display: flex;
+}
